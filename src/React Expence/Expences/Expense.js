@@ -15,6 +15,7 @@ const Expence = (props) => {
   const filterExpences = items.filter((expence) => {
     return expence.date.getFullYear().toString() === filteredYear;
   });
+
   return (
     <Card className="expences">
       <ExpencesFilter selected={filteredYear} onChangeFilter={filterHandler} />
@@ -58,6 +59,7 @@ const Expence = (props) => {
         title={expences[4].title}
         amount={expences[4].amount}
       /> */}
+      
     </Card>
   );
 };

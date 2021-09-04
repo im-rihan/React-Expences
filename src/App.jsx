@@ -14,7 +14,6 @@ const App = (props) => {
   return (
     <>
       <NewExpence onAddExpenceData={addExpenceHandler} />
-   
       <Expence items={ApiData} />
     </>
   );
